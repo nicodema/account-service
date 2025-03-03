@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.devsu.accountservice.service.MovimientoServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.930 s <<< FAILURE! -- in com.devsu.accountservice.service.MovimientoServiceImplTest
+com.devsu.accountservice.service.MovimientoServiceImplTest.testGenerarEstadoCuenta -- Time elapsed: 0.800 s <<< ERROR!
+com.devsu.accountservice.exception.ClienteNoEncontradoException: No se encontro un cliente con el ID: 3
+	at com.devsu.accountservice.service.CuentaServiceImpl.obtenerClientePorId(CuentaServiceImpl.java:45)
+	at com.devsu.accountservice.service.MovimientoServiceImpl.generarEstadoCuenta(MovimientoServiceImpl.java:73)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:723)
+	at com.devsu.accountservice.service.MovimientoServiceImpl$$SpringCGLIB$$0.generarEstadoCuenta(<generated>)
+	at com.devsu.accountservice.service.MovimientoServiceImplTest.testGenerarEstadoCuenta(MovimientoServiceImplTest.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
